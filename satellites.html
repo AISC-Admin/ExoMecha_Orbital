@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deploiement satellite -- ExoMecha / TITAN ORBITAL</title>
+<meta name="description" content="Virtualisation 3D des deux hypotheses d'architecture orbitale de la constellation TITAN ORBITAL : positionnement et fiche technique complete de chaque satellite.">
+<meta property="og:title" content="Deploiement satellite -- ExoMecha / TITAN ORBITAL">
+<meta property="og:description" content="Virtualisation 3D des deux hypotheses d'architecture orbitale de la constellation TITAN ORBITAL : positionnement et fiche technique complete de chaque satellite.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/img/research-earth-moon.jpg">
+<link rel="icon" type="image/png" href="assets/img/exomecha-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <img src="assets/img/exomecha-logo.png" alt="ExoMecha" class="brand-logo">
+      <span>
+        <span class="brand-word font-display">EXOMECHA</span>
+        <span class="brand-sub">Titan Orbital</span>
+      </span>
+    </a>
+
+    <nav class="nav-links">
+      <a href="index.html">Accueil</a>
+      <a href="cartographie.html">Cartographie</a>
+      <a href="satellites.html" class="active">Satellites</a>
+    </nav>
+
+    <div class="nav-cta">
+      <div class="lang-switch">
+        <a href="satellites.html" class="is-active">FR</a>
+        <a href="en/satellites.html">EN</a>
+      </div>
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ PAGE HERO ============ -->
+<section class="page-hero">
+  <div class="hero-bg" style="background-image:url('assets/img/research-earth-moon.jpg');"></div>
+  <div class="container page-hero-inner">
+    <div class="breadcrumb">Accueil <span class="sep">/</span> Satellites</div>
+    <h1 class="font-display">Deploiement satellite -- deux hypotheses en revue</h1>
+    <p class="lead">Virtualisation 3D des deux architectures orbitales soumises a la revue du Pr. Ambrosini, specialiste en conception de mission satellitaire : positionnement exact et fiche technique complete de chaque satellite.</p>
+  </div>
+</section>
+
+<!-- ============ HYPOTHESES ============ -->
+<section class="section">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <div class="eyebrow">Deux hypotheses</div>
+      <h2 class="font-display">MEO pur, ou GEO complete par un anneau MEO reduit</h2>
+      <p>Les deux architectures sont evaluees au regard de la meme exigence : un lien permanent et a faible risque entre les datacenters proprietaires d'ExoMecha et ses agences regionales.</p>
+    </div>
+
+    <div class="grid grid-3" data-reveal>
+      <div class="card">
+        <span class="tag">Hypothese 1</span>
+        <h3>MEO pur -- 35 satellites</h3>
+        <p>Un anneau de 20 satellites (4 plans, i=60&deg;) complete par un plan dense de 15 satellites (i=25&deg;) dedie au corridor Mali-Hong Kong. Pari technologique principal : une portee laser inter-satellites de 8 000 km, non demontree a ce jour.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Hypothese 2</span>
+        <h3>2 GEO + MEO reduit</h3>
+        <p>Deux satellites geostationnaires (24&deg;E, 70&deg;E) en liaison Ka-band permanente, appuyes par un anneau MEO reduit de 16 satellites. Aucun pari technologique majeur, mais une coordination de creneau GEO et un cout industriel encore a chiffrer.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Methode</span>
+        <h3>Simulation Keplerienne</h3>
+        <p>Propagation a deux corps sans J2, geometrie de couverture de Wertz, seuil d'elevation de 20&deg; (bande Ka) -- ordres de grandeur de pre-etude, a verifier par une analyse de mission dediee (GMAT/STK).</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OUTIL ============ -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="tool-panel-bar" data-reveal>
+      <span class="frame-tag">Outil interactif</span>
+      <span class="lang-note"><strong>FR</strong> Cet outil interactif est pour l'instant disponible en francais uniquement.</span>
+    </div>
+    <div class="tool-panel" data-reveal>
+      <iframe src="apps/satellites-app.html" title="Deploiement satellite TITAN ORBITAL" loading="lazy"></iframe>
+    </div>
+    <p class="form-note">Simulation de pre-etude (pas un outil de conception de mission certifie) -- coherente avec les hypotheses et limites de la note de revue : pas de J2, pas de maintien a poste, seuil d'elevation 20&deg;, methode Wertz. Version plein ecran : <a href="apps/satellites-app.html" target="_blank" rel="noopener">ouvrir l'outil dans un nouvel onglet</a>.</p>
+  </div>
+</section>
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <img src="assets/img/exomecha-logo.png" alt="ExoMecha" class="brand-logo">
+        </a>
+        <p>ExoMecha concoit TITAN ORBITAL, l'architecture bancaire orbitale reliant son consortium de structures juridiques a une constellation satellite proprietaire.</p>
+      </div>
+
+      <div class="footer-col">
+        <h5>Navigation</h5>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="cartographie.html">Cartographie</a></li>
+          <li><a href="satellites.html">Satellites</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Le projet</h5>
+        <ul>
+          <li><a href="cartographie.html">Cartographie du consortium</a></li>
+          <li><a href="satellites.html">Deploiement satellite</a></li>
+          <li><span style="color:var(--text-faint);">A.I.S.C Space (partenaire)</span></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="mailto:project@exomecha.ee">project@exomecha.ee</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>&copy; <span id="year">2026</span> ExoMecha -- TITAN ORBITAL. Tous droits reserves.</span>
+      <span>Document de travail interne, prepare pour la revue du consortium et la revue du Pr. Ambrosini sur l'architecture orbitale.</span>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" aria-label="Retour en haut">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+</button>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>

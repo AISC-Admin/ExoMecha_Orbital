@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Corporate Mapping -- ExoMecha / TITAN ORBITAL</title>
+<meta name="description" content="An interactive 3D globe of the 22 legal entities in the TITAN ORBITAL consortium, their capital relationships, and a sector-comparables valuation module.">
+<meta property="og:title" content="Corporate Mapping -- ExoMecha / TITAN ORBITAL">
+<meta property="og:description" content="An interactive 3D globe of the 22 legal entities in the TITAN ORBITAL consortium, their capital relationships, and a sector-comparables valuation module.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="../assets/img/control-room.jpg">
+<link rel="icon" type="image/png" href="../assets/img/exomecha-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <img src="../assets/img/exomecha-logo.png" alt="ExoMecha" class="brand-logo">
+      <span>
+        <span class="brand-word font-display">EXOMECHA</span>
+        <span class="brand-sub">Titan Orbital</span>
+      </span>
+    </a>
+
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="cartography.html" class="active">Corporate Mapping</a>
+      <a href="satellites.html">Satellite Deployment</a>
+    </nav>
+
+    <div class="nav-cta">
+      <div class="lang-switch">
+        <a href="../cartographie.html">FR</a>
+        <a href="cartography.html" class="is-active">EN</a>
+      </div>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ PAGE HERO ============ -->
+<section class="page-hero">
+  <div class="hero-bg" style="background-image:url('../assets/img/control-room.jpg');"></div>
+  <div class="container page-hero-inner">
+    <div class="breadcrumb">Home <span class="sep">/</span> Corporate Mapping</div>
+    <h1 class="font-display">Corporate mapping of the TITAN ORBITAL consortium</h1>
+    <p class="lead">A 3D globe and flat map of the 22 legal entities in the consortium, their 21 capital and functional relationships, and a 5-year valuation module based on sector comparables.</p>
+  </div>
+</section>
+
+<!-- ============ WHAT IT SHOWS ============ -->
+<section class="section">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <div class="eyebrow">What this tool shows</div>
+      <h2 class="font-display">22 entities, 7 jurisdictions, 21 relationships</h2>
+      <p>Each point on the globe is a legal entity in the consortium; each arc is a capital or functional relationship, weighted by a link-strength score from 1 to 5.</p>
+    </div>
+
+    <div class="grid grid-3" data-reveal>
+      <div class="card">
+        <span class="tag">Entities</span>
+        <h3>Detail card on hover</h3>
+        <p>Capital, legal form, shareholders and officers, activity, country -- for each of the 22 entities, including Mali entities whose data is verified against source documents (trade register, tax IDs, business license, minutes of the extraordinary general meeting).</p>
+      </div>
+      <div class="card">
+        <span class="tag">Relationships</span>
+        <h3>Graded link strength</h3>
+        <p>21 capital and functional relationships between entities; arc thickness and glow reflect link strength, from thematic/unconfirmed to very strong.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Valuation</span>
+        <h3>Sector comparables</h3>
+        <p>An adjustable 5-year valuation module (users, growth, ARPU) multiplied by neobank/fintech EV/Revenue multiples (low 2.6x, median 3.7x, high 10x).</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ JURISDICTIONS ============ -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <div class="eyebrow">Jurisdictions covered</div>
+      <h2 class="font-display">A consortium spread across several continents</h2>
+      <p>The mapped entities span multiple legal and tax jurisdictions, reflecting the group's operational, regulatory and banking-license footprint.</p>
+    </div>
+    <div class="method-list" data-reveal>
+      <div class="method-item"><span class="idx">1</span><p><strong>Estonia</strong> -- registered seat of the group (ExoMecha OU) and its R&amp;D / blockchain subsidiaries (PROGENIS BioSystems, ExoLedger).</p></div>
+      <div class="method-item"><span class="idx">2</span><p><strong>Delaware, United States</strong> -- six entities, each capitalized at USD 10,000, including A.I.S.C Space Exploration Technologies LLC and Intelligence Consortium corp LLC.</p></div>
+      <div class="method-item"><span class="idx">3</span><p><strong>Mali</strong> -- A.I.S.C Space Exploration Technologies S.A (spaceport) and Intelligence Consortium corp SAS (logistics), both verified against source legal documents.</p></div>
+      <div class="method-item"><span class="idx">4</span><p><strong>France, Cyprus and planned banking subsidiaries</strong> -- SkyN DeepTech, FUTURA GreenTech, BIONIC STRATOM Ltd, plus upcoming agencies in Hong Kong, Lithuania, El Salvador and Switzerland.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TOOL ============ -->
+<section class="section">
+  <div class="container">
+    <div class="tool-panel-bar" data-reveal>
+      <span class="frame-tag">Interactive tool</span>
+      <span class="lang-note"><strong>FR</strong> This interactive tool is currently available in French only.</span>
+    </div>
+    <div class="tool-panel" data-reveal>
+      <iframe src="../apps/cartographie-app.html" title="TITAN ORBITAL corporate mapping" loading="lazy"></iframe>
+    </div>
+    <p class="form-note">Pre-study simulation and data. Mali entity sheets are verified against source documents (trade register, tax IDs, business license, minutes of the extraordinary general meeting); several planned-subsidiary addresses remain to be confirmed. Full-screen version: <a href="../apps/cartographie-app.html" target="_blank" rel="noopener">open the tool in a new tab</a>.</p>
+  </div>
+</section>
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <img src="../assets/img/exomecha-logo.png" alt="ExoMecha" class="brand-logo">
+        </a>
+        <p>ExoMecha designs TITAN ORBITAL, the orbital banking architecture linking its consortium of legal entities to a proprietary satellite constellation.</p>
+      </div>
+
+      <div class="footer-col">
+        <h5>Navigation</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cartography.html">Corporate mapping</a></li>
+          <li><a href="satellites.html">Satellite deployment</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>The project</h5>
+        <ul>
+          <li><a href="cartography.html">Consortium mapping</a></li>
+          <li><a href="satellites.html">Satellite deployment</a></li>
+          <li><span style="color:var(--text-faint);">A.I.S.C Space (partner)</span></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="mailto:project@exomecha.ee">project@exomecha.ee</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>&copy; <span id="year">2026</span> ExoMecha -- TITAN ORBITAL. All rights reserved.</span>
+      <span>Internal working document, prepared for the consortium's review and Pr. Ambrosini's review of the orbital architecture.</span>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+</button>
+
+<script src="../assets/js/script.js"></script>
+</body>
+</html>
