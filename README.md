@@ -5,8 +5,9 @@ d'ExoMecha, avec deux outils interactifs integres :
 
 - **Cartographie du consortium** -- globe 3D des 22 structures juridiques
   du consortium et de leurs relations, avec module de valorisation.
-- **Deploiement satellite** -- virtualisation 3D des deux hypotheses
-  d'architecture orbitale (MEO pur 35 satellites / GEO + MEO reduit).
+- **Deploiement satellite** -- virtualisation 3D de la feuille de route de
+  deploiement de la constellation orbitale (Annee 0, 12 satellites -> Annee 1,5,
+  anneau cible a 16 satellites), soit 28 satellites cumules a terme.
 
 Design derive du systeme graphique du site A.I.S.C Space Exploration
 Technologies (meme feuille de style, meme structure de header/footer,
